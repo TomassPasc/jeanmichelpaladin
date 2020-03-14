@@ -1,0 +1,13 @@
+{
+    "name": "nicolaslechenic/jean-michel-paladin",
+    "authors": [
+        {
+            "name": "Nicolas LE CHENIC",
+            "email": "nicolaslechenic@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "kahlan/kahlan": "^4.7"
+    }
+}
