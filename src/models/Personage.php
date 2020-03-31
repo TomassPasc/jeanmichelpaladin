@@ -23,6 +23,11 @@ class Personage {
     }
 
     public function infos(): string {
-        // TODO
+        if($this->hp > 0){
+            return "{$this->name} ({$this->hp} hp)";
+        } else{
+            return "{$this->name} is dead";
+
+        }
     }
 }

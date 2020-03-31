@@ -10,6 +10,7 @@ class Fight {
     }
 
     public function isOver(): bool {
-        // TODO
+        return ($this->hero->hp <= 0 || $this->vilain->hp <= 0 )
+      
     }
 }

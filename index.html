@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>client</title>
+</head>
+
+<body>
+    <div id="scene"></div>
+
+    <script type="text/javascript">
+        let scene = document.getElementById('scene');
+        fetch('http://localhost:3000/api/hero', {
+            method:'GET', mode:"no-cors"
+        }).then(function (response){
+            //console.log(response.json());
+            return response.json()
+            }).then(function (json) {
+            //console.log(json);
+            scene.innerText  = json.info;
+        });
+        
+
+    </script>
+</body>
+</html>
